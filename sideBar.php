@@ -7,11 +7,12 @@
               Dashboard
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item pedidos">
             <a class="nav-link" href="./pedidos.php">
               <span data-feather="file" class="align-text-bottom"></span>
               Pedidos
             </a>
+            <span class="newOrder"></span>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./produtos.php">

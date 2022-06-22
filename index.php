@@ -9,12 +9,12 @@
     <title>Painel de Administrador</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/">
-    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="./styles/dashboard.css">
 
   </head>
   <body>
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="../api/index.php"><img src="../assets/img/logo isabela.png" alt="logo usemarcas"/></a>
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="./index.php"><img src="./assets/img/logo isabela.png" alt="logo usemarcas"/></a>
 
 
       <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
