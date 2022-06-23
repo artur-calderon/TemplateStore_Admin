@@ -35,6 +35,9 @@ const db = getFirestore(app)
 
 const containerPedidos = document.querySelector('.conteudoPedidos')
 
+containerPedidos.innerHTML =
+  "<div class='spinner-border' role='status'><span class='visually-hidden'>Loading...</span></div>"
+
 const q = query(collection(db, 'pedidos'))
 
 onSnapshot(q, res => {
@@ -43,10 +46,7 @@ onSnapshot(q, res => {
     document.querySelector('.newOrder').innerHTML = res.docs.length
     document.querySelector('.newOrder').classList.toggle('showNewOrder')
   }
-  if (res.docs.length < 1) {
-    containerPedidos.innerHTML =
-      "<div class='spinner-border' role='status'><span class='visually-hidden'>Loading...</span></div>"
-  }
+
   containerPedidos.innerHTML = ''
 
   res.docs.map(prod => {
@@ -61,6 +61,9 @@ onSnapshot(q, res => {
 
         containerPedidos.innerHTML += `
         <div class="accordion" id="${clientes.id}">
+        <div>
+              <button>teste</button>
+            </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading${clientes.id}">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${
@@ -74,9 +77,7 @@ onSnapshot(q, res => {
               <p>Conluir pedido</p>
             </button>
             </h2>
-            <div>
-              <button>teste</button>
-            </div>
+            
             `
 
         const produtosPedidos = prod.data().cartProductsPage
